@@ -1,5 +1,7 @@
 # PersonalPortfolioAngular
 
+![madter build status](https://travis-ci.com/hphothong/personal-portfolio-angular.svg?branch=master)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
 
 ## Development server
