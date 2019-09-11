@@ -1,9 +1,12 @@
 dist: trusty
-sudo: false
+sudo: required
 
 language: node_js
 node_js:
   - "10"
+
+Before_install:
+  —- sudo apt-get install -y dpkg
 
 addons:
   apt:
