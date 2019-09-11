@@ -5,8 +5,7 @@ language: node_js
 node_js:
   - "10"
 
-install:
-  —- sudo apt-get install -y dpkg
+—- sudo apt-get install -y dpkg
 
 addons:
   apt:
