@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "root": "",
@@ -25,7 +25,7 @@
             "aot": false,
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.sass",
+              "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
@@ -89,7 +89,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.sass"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -119,5 +119,10 @@
       }
     }
   },
-  "defaultProject": "personal-portfolio-angular"
+  "defaultProject": "personal-portfolio-angular",
+  "schematics": {
+    "@schematics/angular:component": {
+      "stylesyntax": "scss"
+    }
+  }
 }

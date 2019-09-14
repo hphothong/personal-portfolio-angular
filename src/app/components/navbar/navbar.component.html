@@ -1,21 +1,33 @@
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
   <a class="navbar-brand" routerLink="/introduction">Personal Portfolio</a>
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a
-        class="nav-link"
-        routerLinkActive="active"
-        routerLink="/introduction"
-        >Introduction</a
-      >
-    </li>
-    <li class="nav-item">
-      <a
-        class="nav-link"
-        routerLinkActive="active"
-        routerLink="/coding-challenges"
-        >Coding Challenges</a
-      >
-    </li>
-  </ul>
+
+  <button
+    class="navbar-toggler border-0"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarDropdown"
+    aria-controls="navbarDropdown"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <div class="fa fa-bars"><span></span><span></span><span></span></div>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/introduction"
+          >Introduction</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLinkActive="active"
+          routerLink="/coding-challenges"
+          >Coding Challenges</a
+        >
+      </li>
+    </ul>
+  </div>
 </nav>
