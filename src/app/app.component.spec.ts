@@ -3,12 +3,18 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [AppComponent, NavbarComponent, FooterComponent]
+      declarations: [
+        AppComponent,
+        NavbarComponent,
+        FooterComponent,
+        JumbotronComponent
+      ]
     }).compileComponents();
   }));
 
