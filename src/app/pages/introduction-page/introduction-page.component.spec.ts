@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IntroductionPageComponent } from './introduction-page.component';
+import { JumbotronComponent } from 'src/app/components/jumbotron/jumbotron.component';
 
 describe('IntroductionPageComponent', () => {
   let component: IntroductionPageComponent;
@@ -8,9 +9,8 @@ describe('IntroductionPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IntroductionPageComponent ]
-    })
-    .compileComponents();
+      declarations: [IntroductionPageComponent, JumbotronComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
