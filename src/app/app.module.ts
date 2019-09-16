@@ -18,7 +18,13 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
     FooterComponent,
     JumbotronComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NavbarComponent,
+    FooterComponent,
+    JumbotronComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
