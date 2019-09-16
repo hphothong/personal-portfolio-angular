@@ -7,6 +7,7 @@ import { CodingChallengesPageComponent } from './pages/coding-challenges-page/co
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IntroductionPageComponent } from './pages/introduction-page/introduction-page.component';
+import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { IntroductionPageComponent } from './pages/introduction-page/introductio
     IntroductionPageComponent,
     CodingChallengesPageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    JumbotronComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
