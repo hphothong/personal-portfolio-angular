@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ProjectEulerService } from './project-euler.service';
+import { GistsService } from './gists.service';
 
-describe('ProjectEulerService', () => {
+describe('GistsService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: ProjectEulerService = TestBed.get(ProjectEulerService);
+    const service: GistsService = TestBed.get(GistsService);
     expect(service).toBeTruthy();
   });
 });

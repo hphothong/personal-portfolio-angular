@@ -1,1 +1,8 @@
-<p>coding-challenges-page works!</p>
+<div *ngIf="rawTextFromFiles !== {}">
+  <div *ngFor="let gist of githubGistModels">
+    <p>{{ gist.description }}</p>
+    <pre *ngFor="let file of gist.files">
+      {{ rawTextFromFiles[gist.url][file.rawUrl] }}
+    </pre>
+  </div>
+</div>
