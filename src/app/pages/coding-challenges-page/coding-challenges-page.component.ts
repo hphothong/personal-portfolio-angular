@@ -28,7 +28,6 @@ export class CodingChallengesPageComponent implements OnInit {
                 this.rawTextFromFiles[githubGistModel.url] = {};
               }
               this.rawTextFromFiles[githubGistModel.url][file.rawUrl] = rawText;
-              console.log(rawText);
             });
         });
       });
