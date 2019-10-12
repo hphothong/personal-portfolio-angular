@@ -28,13 +28,13 @@ module.exports = function(config) {
         './coverage/personal-portfolio-angular'
       ),
       reports: ['html', 'lcovonly', 'text-summary'],
-      fixWebpackSourcePaths: true,
-      thresholds: {
-        statements: 80,
-        lines: 80,
-        branches: 80,
-        functions: 80
-      }
+      fixWebpackSourcePaths: true
+      //   thresholds: {
+      //     statements: 80,
+      //     lines: 80,
+      //     branches: 80,
+      //     functions: 80
+      //   }
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
