@@ -8,8 +8,8 @@ import { GithubGistModel } from 'src/app/models/github/github-gist-model';
   styleUrls: ['./coding-challenges-page.component.scss']
 })
 export class CodingChallengesPageComponent implements OnInit {
-  private githubGistModels: GithubGistModel[] = [];
-  private rawTextFromFiles: object = {};
+  public githubGistModels: GithubGistModel[] = [];
+  public rawTextFromFiles: object = {};
 
   constructor(private gistsService: GistsService) {}
 

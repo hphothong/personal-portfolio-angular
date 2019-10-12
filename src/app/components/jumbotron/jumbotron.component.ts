@@ -7,10 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class JumbotronComponent implements OnInit {
   @Input()
-  private title: string;
+  public title: string;
 
   @Input()
-  private subtitle: string;
+  public subtitle: string;
 
   constructor() {}
 
