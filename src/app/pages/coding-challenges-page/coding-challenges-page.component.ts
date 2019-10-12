@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { GistsService } from 'src/app/services/github/gists.service';
 import { GithubGistModel } from 'src/app/models/github/github-gist-model';
-import { ConsoleReporter } from 'jasmine';
 
 @Component({
   selector: 'app-coding-challenges-page',
