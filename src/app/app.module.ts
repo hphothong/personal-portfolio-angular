@@ -21,7 +21,7 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
     JumbotronComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [GistsService, HttpClient],
+  providers: [GistsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

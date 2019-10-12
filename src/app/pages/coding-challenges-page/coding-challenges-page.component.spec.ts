@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CodingChallengesPageComponent } from './coding-challenges-page.component';
+import { JumbotronComponent } from 'src/app/components/jumbotron/jumbotron.component';
+import { GistsService } from 'src/app/services/github/gists.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('CodingChallengesPageComponent', () => {
   let component: CodingChallengesPageComponent;
@@ -8,9 +11,10 @@ describe('CodingChallengesPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CodingChallengesPageComponent ]
-    })
-    .compileComponents();
+      providers: [GistsService],
+      imports: [HttpClientModule],
+      declarations: [CodingChallengesPageComponent, JumbotronComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
