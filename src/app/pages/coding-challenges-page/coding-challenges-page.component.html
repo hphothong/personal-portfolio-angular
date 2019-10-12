@@ -1,8 +1,13 @@
-<div *ngIf="rawTextFromFiles !== {}">
-  <div *ngFor="let gist of githubGistModels">
-    <p>{{ gist.description }}</p>
-    <pre *ngFor="let file of gist.files">
-      {{ rawTextFromFiles[gist.url][file.rawUrl] }}
-    </pre>
+<div class="w-75 m-auto">
+  <div class="card m-4" *ngFor="let gist of githubGistModels">
+    <div class="card-header">
+      {{ gist.description }}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <pre class="card-text" *ngFor="let file of gist.files">{{
+        rawTextFromFiles[gist.url][file.rawUrl]
+      }}</pre>
+    </div>
   </div>
 </div>
